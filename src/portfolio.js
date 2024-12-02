@@ -16,7 +16,7 @@ const greeting = {
   full_name: "Chandan Kondapuram",
   subTitle: "Data Scientist, React Developer. Always learning.",
   resumeLink:
-    "https://drive.google.com/file/d/1lw8-TPRsFlpWukovG7A6_QhsvDFKVmn4/view?usp=drive_link",
+    "https://drive.google.com/file/d/12uX_tOH50lPd_45TU4oukxujaItcPG5x/view?usp=drive_link",
   mail: "mailto:chandanmudhiraj@gmail.com",
 };
 
