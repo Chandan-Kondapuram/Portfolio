@@ -83,122 +83,122 @@ const skills = {
       ],
     },
 
-    {
-      title: "React Developer",
-      fileName: "FullStackImg",
-      skills: [
-        "⚡ Building responsive website front end using ReactJS",
-        "⚡ Developed reusable components and optimized performance for scalable solutions",
-        "⚡ Collaborated with cross-functional teams to integrate frontend features with backend services and deliver high-quality web solutions",
-      ],
-      softwareSkills: [
-        {
-          skillName: "HTML5",
-          fontAwesomeClassname: "simple-icons:html5",
-          style: {
-            color: "#E34F26",
-          },
-        },
-        {
-          skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
-          style: {
-            color: "#1572B6",
-          },
-        },
-        {
-          skillName: "JavaScript",
-          fontAwesomeClassname: "simple-icons:javascript",
-          style: {
-            backgroundColor: "#FFFFFF",
-            color: "#F7DF1E",
-          },
-        },
-        {
-          skillName: "PHP",
-          fontAwesomeClassname: "simple-icons:php",
-          style: {
-            color: "#7377AD",
-          },
-        },
-        {
-          skillName: "Java",
-          fontAwesomeClassname: "simple-icons:java",
-          style: {
-            color: "#f89820",
-          },
-        },
+    // {
+    //   title: "React Developer",
+    //   fileName: "FullStackImg",
+    //   skills: [
+    //     "⚡ Building responsive website front end using ReactJS",
+    //     "⚡ Developed reusable components and optimized performance for scalable solutions",
+    //     "⚡ Collaborated with cross-functional teams to integrate frontend features with backend services and deliver high-quality web solutions",
+    //   ],
+    //   softwareSkills: [
+    //     {
+    //       skillName: "HTML5",
+    //       fontAwesomeClassname: "simple-icons:html5",
+    //       style: {
+    //         color: "#E34F26",
+    //       },
+    //     },
+    //     {
+    //       skillName: "CSS3",
+    //       fontAwesomeClassname: "fa-css3",
+    //       style: {
+    //         color: "#1572B6",
+    //       },
+    //     },
+    //     {
+    //       skillName: "JavaScript",
+    //       fontAwesomeClassname: "simple-icons:javascript",
+    //       style: {
+    //         backgroundColor: "#FFFFFF",
+    //         color: "#F7DF1E",
+    //       },
+    //     },
+    //     {
+    //       skillName: "PHP",
+    //       fontAwesomeClassname: "simple-icons:php",
+    //       style: {
+    //         color: "#7377AD",
+    //       },
+    //     },
+    //     {
+    //       skillName: "Java",
+    //       fontAwesomeClassname: "simple-icons:java",
+    //       style: {
+    //         color: "#f89820",
+    //       },
+    //     },
 
-        {
-          skillName: "Visual Basic",
-          fontAwesomeClassname: "simple-icons:dot-net",
-          style: {
-            color: "#029FCE",
-          },
-        },
+    //     {
+    //       skillName: "Visual Basic",
+    //       fontAwesomeClassname: "simple-icons:dot-net",
+    //       style: {
+    //         color: "#029FCE",
+    //       },
+    //     },
 
-        {
-          skillName: "C",
-          fontAwesomeClassname: "simple-icons:c",
-          style: {
-            color: "#E94E32",
-          },
-        },
-        {
-          skillName: "C++",
-          fontAwesomeClassname: "simple-icons:cplusplus",
-          style: {
-            color: "#E94E32",
-          },
-        },
-        {
-          skillName: "ReactJS",
-          fontAwesomeClassname: "simple-icons:react",
-          style: {
-            color: "#61DAFB",
-          },
-        },
+    //     {
+    //       skillName: "C",
+    //       fontAwesomeClassname: "simple-icons:c",
+    //       style: {
+    //         color: "#E94E32",
+    //       },
+    //     },
+    //     {
+    //       skillName: "C++",
+    //       fontAwesomeClassname: "simple-icons:cplusplus",
+    //       style: {
+    //         color: "#E94E32",
+    //       },
+    //     },
+    //     {
+    //       skillName: "ReactJS",
+    //       fontAwesomeClassname: "simple-icons:react",
+    //       style: {
+    //         color: "#61DAFB",
+    //       },
+    //     },
 
-        {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
-          style: {
-            color: "#339933",
-          },
-        },
-        {
-          skillName: "MongoDB",
-          fontAwesomeClassname: "simple-icons:mongodb",
-          style: {
-            color: "#439743",
-          },
-        },
+    //     {
+    //       skillName: "NodeJS",
+    //       fontAwesomeClassname: "simple-icons:node-dot-js",
+    //       style: {
+    //         color: "#339933",
+    //       },
+    //     },
+    //     {
+    //       skillName: "MongoDB",
+    //       fontAwesomeClassname: "simple-icons:mongodb",
+    //       style: {
+    //         color: "#439743",
+    //       },
+    //     },
 
-        {
-          skillName: "MySQL",
-          fontAwesomeClassname: "simple-icons:mysql",
-          style: {
-            color: "#4479A1",
-          },
-        },
+    //     {
+    //       skillName: "MySQL",
+    //       fontAwesomeClassname: "simple-icons:mysql",
+    //       style: {
+    //         color: "#4479A1",
+    //       },
+    //     },
 
-        {
-          skillName: "Wordpress",
-          fontAwesomeClassname: "simple-icons:wordpress",
-          style: {
-            color: "#207297",
-          },
-        },
+    //     {
+    //       skillName: "Wordpress",
+    //       fontAwesomeClassname: "simple-icons:wordpress",
+    //       style: {
+    //         color: "#207297",
+    //       },
+    //     },
 
-        {
-          skillName: "Git",
-          fontAwesomeClassname: "simple-icons:git",
-          style: {
-            color: "#E94E32",
-          },
-        },
-      ],
-    },
+    //     {
+    //       skillName: "Git",
+    //       fontAwesomeClassname: "simple-icons:git",
+    //       style: {
+    //         color: "#E94E32",
+    //       },
+    //     },
+    //   ],
+    // },
 
     // {
     //   title: "Cloud Infra-Architecture",
@@ -440,14 +440,19 @@ const experience = {
       title: "Internships",
       experiences: [
         {
-          title: "React Developer",
+          title: "Internship Trainee",
           company: "Virtusa",
           company_url: "https://www.virtusa.com/",
           logo_path: "virtusa.jpg",
           duration: "December 2022 - March 2023",
           location: "Work From Home",
           description:
-            "I developed dynamic web applications using React.js, collaborating with teams to enhance UI/UX and optimize performance. I also focused on creating reusable components and integrating frontend features with backend services for efficient, scalable solutions.",
+            "
+• Analyzed large datasets to identify trends, resulting in a 20% improvement in data-driven decision-making processes.
+• Streamlined data preprocessing pipelines, reducing data preparation time by 30% and increasing efficiency
+• Assisted in building predictive models to forecast business trends, achieving 85% model accuracy
+• Collaborated with team members to integrate statistical analysis techniques, improving project outcomes by 15%.
+            ",
           color: "#ee3c26",
         },
         // {
