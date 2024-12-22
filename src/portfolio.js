@@ -14,7 +14,7 @@ const greeting = {
   logo_name: "CK",
   nickname: "Chandu",
   full_name: "Chandan Kondapuram",
-  subTitle: "Data Scientist, React Developer. Always learning.",
+  subTitle: "Data Scientist, Always learning.",
   resumeLink:
     "https://drive.google.com/file/d/12uX_tOH50lPd_45TU4oukxujaItcPG5x/view?usp=drive_link",
   mail: "mailto:chandanmudhiraj@gmail.com",
@@ -447,12 +447,7 @@ const experience = {
           duration: "December 2022 - March 2023",
           location: "Work From Home",
           description:
-            "
-• Analyzed large datasets to identify trends, resulting in a 20% improvement in data-driven decision-making processes.
-• Streamlined data preprocessing pipelines, reducing data preparation time by 30% and increasing efficiency
-• Assisted in building predictive models to forecast business trends, achieving 85% model accuracy
-• Collaborated with team members to integrate statistical analysis techniques, improving project outcomes by 15%.
-            ",
+            "I acquired hands-on experience in data analysis and predictive modeling. I analyzed large datasets to uncover trends, streamlining data preprocessing pipelines to improve efficiency by 30%. Collaborating with my team, I contributed to developing predictive models with an accuracy of 85%, enabling more effective business trend forecasting. This role enhanced my problem-solving skills and deepened my understanding of data-driven decision-making.",
           color: "#ee3c26",
         },
         // {
