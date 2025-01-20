@@ -13,7 +13,7 @@ const greeting = {
   title2: "Chandan Kondapuram",
   logo_name: "CK",
   nickname: "Chandu",
-  full_name: "Chandan Kondapuram",
+  fsull_name: "Chandan Kondapuram",
   subTitle: "Data Scientist, Always learning.",
   resumeLink:
     "https://drive.google.com/file/d/12uX_tOH50lPd_45TU4oukxujaItcPG5x/view?usp=drive_link",
