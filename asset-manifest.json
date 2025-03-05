@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.6c34bf6c.css",
-    "main.js": "/Portfolio/static/js/main.32518144.js",
+    "main.js": "/Portfolio/static/js/main.ba9817f8.js",
     "static/media/fa-solid-900.svg": "/Portfolio/static/media/fa-solid-900.33f11e8e33e406b0dc21.svg",
     "static/media/fa-brands-400.svg": "/Portfolio/static/media/fa-brands-400.5f2a2f236048660df440.svg",
     "static/media/chandu.png": "/Portfolio/static/media/chandu.8160b5a04ac4dfac8b8a.png",
@@ -36,6 +36,7 @@
     "static/media/virtusa.jpg": "/Portfolio/static/media/virtusa.ceb16da42db2f44a3857.jpg",
     "static/media/lives.jpg": "/Portfolio/static/media/lives.89da6cd00d08c3ffb606.jpg",
     "static/media/IBM.jpeg": "/Portfolio/static/media/IBM.e21b4e0fe9b88c481ae7.jpeg",
+    "static/media/ATR.jpg": "/Portfolio/static/media/ATR.7811689a857cd56f186f.jpg",
     "static/media/googleAssistant.jpg": "/Portfolio/static/media/googleAssistant.547075a751cc15673246.jpg",
     "static/media/wrighter.jpg": "/Portfolio/static/media/wrighter.0a6efd88c7795e04684b.jpg",
     "static/media/fa-regular-400.woff": "/Portfolio/static/media/fa-regular-400.2ccf005a6998d30de3d3.woff",
@@ -46,10 +47,10 @@
     "static/media/buld.jpg": "/Portfolio/static/media/buld.55444b9789a64f32e2e5.jpg",
     "index.html": "/Portfolio/index.html",
     "main.6c34bf6c.css.map": "/Portfolio/static/css/main.6c34bf6c.css.map",
-    "main.32518144.js.map": "/Portfolio/static/js/main.32518144.js.map"
+    "main.ba9817f8.js.map": "/Portfolio/static/js/main.ba9817f8.js.map"
   },
   "entrypoints": [
     "static/css/main.6c34bf6c.css",
-    "static/js/main.32518144.js"
+    "static/js/main.ba9817f8.js"
   ]
 }
