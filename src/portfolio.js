@@ -16,7 +16,7 @@ const greeting = {
   full_name: "Chandan Kondapuram",
   subTitle: "Data Scientist, Always learning.",
   resumeLink:
-    "https://drive.google.com/file/d/1Yfm5kZqz50NAZ9xI8NpQfJSt61uNJ2MR/view?usp=drive_link",
+    "https://drive.google.com/file/d/1LYFi6PYaydIYOz5RUeqyepIpeaKqAVfZ/view?usp=drive_link",
   mail: "mailto:chandanmudhiraj@gmail.com",
 };
 
@@ -406,41 +406,39 @@ const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteership",
   description:
-    "I've completed one internship. I've mostly done projects on my own and I am actively looking for internships. I love organizing workshops to share my knowledge with others.",
+    "I am actively seeking internship and co-op opportunities to apply my skills and gain hands-on industry experience. I have a strong passion for knowledge sharing and enjoy organizing workshops to help others learn and grow.",
   header_image_path: "experience.svg",
   sections: [
-    // {
-    //   title: "Work",
-    //   experiences: [
-    //     {
-    //       title: "IT Developer",
-    //       company: "Canada Revenue Agency",
-    //       company_url: "https://www.canada.ca/en/revenue-agency.html",
-    //       logo_path: "cra.png",
-    //       duration: "May 2023 - Ongoing",
-    //       location: "Halifax, Nova Scotia",
-    //       description:
-    //         "Canada Revenue Agency (CRA) administers tax laws for the Government of Canada and for most provinces and territories, and administers various social and economic benefit and incentive programs delivered through the tax system.",
-    //       color: "#f10000",
-    //     },
-    //     {
-    //       title: "Full Stack Developer",
-    //       company: "Quicko",
-    //       company_url: "https://quicko.com/",
-    //       logo_path: "quicko.jpg",
-    //       duration: "June 2021 - October 2021",
-    //       location: "Ahmedabad",
-    //       description:
-    //         "Quicko is an online tax planning, preparation & filing platform for individuals & businesses.",
-    //       color: "#2962FF",
-    //     },
-    //   ],
-    // },
+    {
+      title: "Work",
+      experiences: [
+        {
+          title: "Data Scientist",
+          company: "Visual Analytics Laboratory",
+          company_url: "",
+          logo_path: "",
+          duration: "Jan 2025 - Present",
+          location: "Kent, Ohio",
+          description: "",
+          color: "#f10000",
+        },
+        {
+          title: "Data & AI Researcher",
+          company: "Advanced Telerobotics Research Laboratory",
+          company_url: "https://www.atr.cs.kent.edu/",
+          logo_path: "ATR.jpg",
+          duration: "Jan 2025 - Present",
+          location: "Kent, Ohio",
+          description: "",
+          color: "#2962FF",
+        },
+      ],
+    },
     {
       title: "Internships",
       experiences: [
         {
-          title: "Internship Trainee",
+          title: "Data Analyst",
           company: "Virtusa",
           company_url: "https://www.virtusa.com/",
           logo_path: "virtusa.jpg",
