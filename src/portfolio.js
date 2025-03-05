@@ -10,7 +10,7 @@ const settings = {
 //Home Page
 const greeting = {
   title: "Hello.",
-  title2: "Chandan Kondapuram",
+  title2: "",
   logo_name: "CK",
   nickname: "Chandu",
   full_name: "Chandan Kondapuram",
