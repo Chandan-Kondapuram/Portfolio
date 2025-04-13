@@ -15,8 +15,7 @@ const greeting = {
   nickname: "Chandu",
   full_name: "Chandan Kondapuram",
   subTitle: "Data Scientist, Always learning.",
-  resumeLink:
-    "https://drive.google.com/file/d/1LYFi6PYaydIYOz5RUeqyepIpeaKqAVfZ/view?usp=drive_link",
+  resumeLink: "https://bit.ly/4ib7ivR",
   mail: "mailto:chandanmudhiraj@gmail.com",
 };
 
