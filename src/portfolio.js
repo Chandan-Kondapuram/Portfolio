@@ -15,7 +15,7 @@ const greeting = {
   nickname: "Chandu",
   full_name: "Chandan Kondapuram",
   subTitle: "Data Scientist, Always learning.",
-  resumeLink: "https://bit.ly/4ib7ivR",
+  resumeLink: "https://bit.ly/4d3hTrH",
   mail: "mailto:chandanmudhiraj@gmail.com",
 };
 
@@ -441,7 +441,7 @@ const experience = {
           company: "Virtusa",
           company_url: "https://www.virtusa.com/",
           logo_path: "virtusa.jpg",
-          duration: "December 2022 - March 2023",
+          duration: "December 2022 - May 2023",
           location: "Work From Home",
           description:
             "I acquired hands-on experience in data analysis and predictive modeling. I analyzed large datasets to uncover trends, streamlining data preprocessing pipelines to improve efficiency by 30%. Collaborating with my team, I contributed to developing predictive models with an accuracy of 85%, enabling more effective business trend forecasting. This role enhanced my problem-solving skills and deepened my understanding of data-driven decision-making.",
