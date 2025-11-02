@@ -12,19 +12,17 @@ export default function ProjectCard({ repo: project, theme }) {
 
   const styles = style({
     color: theme.text,
-    background: theme.glassBackground,
-    backdropFilter: theme.glassBackdropBlur,
-    WebkitBackdropFilter: theme.glassBackdropBlur,
-    border: `1px solid ${theme.glassBorder}`,
+    background: theme.projectCard,
+    border: `1px solid ${theme.borderColor}`,
     boxShadow: theme.glassShadow,
-    padding: "2.5rem",
+    padding: "24px",
     cursor: "pointer",
-    borderRadius: "25px",
+    borderRadius: "18px",
     height: "100%",
-    transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+    transition: "all 0.2s ease",
     ":hover": {
-      transform: "translateY(-10px) scale(1.02)",
-      boxShadow: `0 15px 45px ${theme.accentColor}`,
+      transform: "translateY(-4px)",
+      boxShadow: theme.hoverShadow,
       background: theme.cardHover,
     },
   });

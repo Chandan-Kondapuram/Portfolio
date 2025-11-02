@@ -12,24 +12,21 @@ function Header(props) {
 
   const styles = style({
     cursor: "pointer",
-    height: "45px",
-    width: "45px",
-    marginRight: "5px",
-    marginLeft: "15px",
-    paddingTop: "5px",
+    height: "36px",
+    width: "36px",
+    marginRight: "0px",
+    marginLeft: "12px",
+    paddingTop: "0px",
     borderRadius: "50%",
-    border: "1px solid rgba(255, 255, 255, 0.18)",
+    border: "none",
     alignItems: "center",
     justifyContent: "center",
-    background: "rgba(255, 255, 255, 0.15)",
-    backdropFilter: "blur(10px)",
-    WebkitBackdropFilter: "blur(10px)",
+    background: "transparent",
     outline: "none",
-    transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
+    display: "flex",
+    transition: "all 0.2s ease",
     ":hover": {
-      transform: "scale(1.1) rotate(15deg)",
-      boxShadow: `0 8px 20px ${props.theme.accentColor}`,
-      background: "rgba(255, 255, 255, 0.25)",
+      background: "rgba(0, 0, 0, 0.04)",
     },
   });
 
@@ -51,17 +48,9 @@ function Header(props) {
 
   const icon =
     props.theme.name === "dark" ? (
-      <HiMoon
-        strokeWidth={1}
-        size={20}
-        color="#00d4ff"
-      />
+      <HiMoon strokeWidth={1} size={20} color={props.theme.accentColor} />
     ) : (
-      <CgSun
-        strokeWidth={1}
-        size={20}
-        color="#667eea"
-      />
+      <CgSun strokeWidth={1} size={20} color={props.theme.text} />
     );
 
   return (

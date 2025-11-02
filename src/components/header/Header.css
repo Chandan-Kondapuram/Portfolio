@@ -1,82 +1,73 @@
-/* header - Glassmorphism Design */
+/* header - Apple Minimal Design */
 
 .header {
   display: block;
-  max-width: 95%;
-  padding: 20px 30px;
-  margin: 10px auto;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
-  -webkit-backdrop-filter: blur(15px);
-  border-radius: 25px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  max-width: 1200px;
+  padding: 16px 40px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   position: sticky;
-  top: 10px;
+  top: 0;
   z-index: 1000;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header:hover {
-  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.3);
-  background: rgba(255, 255, 255, 0.15);
+  transition: all 0.3s ease;
 }
 
 .header ul {
   margin: 0;
-  padding: 10px;
+  padding: 0;
   list-style: none;
   overflow: hidden;
 }
 
 .grey-color {
-  color: #868e96;
+  color: #86868b;
 }
 
 .header li a {
   display: block;
-  padding: 10px 20px;
-  /* color: black; */
+  padding: 8px 16px;
   text-decoration: none;
 }
 
 .header .logo {
   display: block;
   float: left;
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-decoration: none;
-  margin-top: -12px;
+  margin-top: 4px;
   line-height: normal;
-  transition: all 0.3s ease;
+  transition: opacity 0.3s ease;
+  font-weight: 600;
 }
 
 .header .logo:hover {
-  transform: scale(1.05);
-  text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+  opacity: 0.7;
 }
 
 .header .logo-name {
-  font-family: "Google Sans Regular";
-  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+  font-weight: 600;
   padding: 0 10px;
-  letter-spacing: 3px;
-  background: linear-gradient(135deg, #00d4ff 0%, #667eea 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  letter-spacing: -0.5px;
+  color: #1d1d1f;
 }
 
 /* menu */
 
 .menu {
-  font-family: "Google Sans Regular";
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .header .menu {
-  margin-top: 10px;
+  margin-top: 0px;
   clear: both;
   max-height: 0;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.3s ease-out;
 }
 
 /* menu icon */
@@ -85,23 +76,23 @@
   cursor: pointer;
   display: inline-block;
   float: right;
-  padding: 28px 20px;
+  padding: 20px 0px;
   position: relative;
   user-select: none;
 }
 
 .header .menu-icon .navicon {
-  background: #fb1056;
+  background: #1d1d1f;
   display: block;
   height: 2px;
   position: relative;
   transition: background 0.2s ease-out;
-  width: 18px;
+  width: 20px;
 }
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #fb1056;
+  background: #1d1d1f;
   content: "";
   display: block;
   height: 100%;
@@ -111,11 +102,11 @@
 }
 
 .header .menu-icon .navicon:before {
-  top: 5px;
+  top: 6px;
 }
 
 .header .menu-icon .navicon:after {
-  top: -5px;
+  top: -6px;
 }
 
 /* menu btn */
@@ -145,18 +136,19 @@
   top: 0;
 }
 
-/* Glassmorphism Navigation Links */
+/* Apple-style Navigation Links */
 .homei,
 .ec,
 .xp,
 .projects,
 .cr {
-  margin: 2px 8px 20px;
-  padding: 10px 20px !important;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 15px;
-  font-weight: 500;
-  position: relative;
+  margin: 0px 4px;
+  padding: 8px 12px !important;
+  transition: all 0.2s ease;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1d1d1f;
 }
 
 .homei:hover,
@@ -164,34 +156,8 @@
 .xp:hover,
 .projects:hover,
 .cr:hover {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 4px 20px rgba(0, 212, 255, 0.3);
-  transform: translateY(-2px);
-  color: #ffffff !important;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-/* Individual accent colors on hover */
-.homei:hover {
-  box-shadow: 0 4px 20px rgba(42, 176, 238, 0.5);
-}
-
-.ec:hover {
-  box-shadow: 0 4px 20px rgba(235, 101, 89, 0.5);
-}
-
-.xp:hover {
-  box-shadow: 0 4px 20px rgba(247, 185, 8, 0.5);
-}
-
-.projects:hover {
-  box-shadow: 0 4px 20px rgba(228, 65, 96, 0.5);
-}
-
-.cr:hover {
-  box-shadow: 0 4px 20px rgba(71, 161, 72, 0.5);
+  background: rgba(0, 0, 0, 0.04);
+  color: #0071e3 !important;
 }
 
 /* 48em = 768px */
@@ -217,19 +183,20 @@
   .header .logo {
     display: block;
     float: left;
-    font-size: 1.25em;
+    font-size: 1.1em;
     text-decoration: none;
-    margin-top: 15px;
+    margin-top: 0px;
     line-height: normal;
   }
 
   .header {
-    padding-top: 10px;
+    padding: 12px 20px;
     text-align: center;
   }
 }
+
 @media (max-width: 960px) and (min-width: 768px) {
   .header {
-    font-size: 12px;
+    font-size: 13px;
   }
 }

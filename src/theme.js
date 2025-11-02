@@ -1,91 +1,101 @@
-// Glassmorphism Theme Presets - Professional Software Developer & Data Scientist
+// Apple-Style Minimalist Theme - Clean, Professional, Spacious
 
 const lightTheme = {
   name: "light",
-  // Gradient backgrounds for glassmorphism
-  body: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-  bodyAlt: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)",
+  // Clean backgrounds - Pure white, no gradients
+  body: "#ffffff",
+  bodyAlt: "#f5f5f7",
 
-  // Text colors
-  text: "#2d3748",
-  textBright: "#1a202c",
+  // Text colors - Apple-style hierarchy
+  text: "#1d1d1f",
+  textBright: "#000000",
   dark: "#000000",
-  secondaryText: "#4a5568",
+  secondaryText: "#6e6e73",
 
-  // Accent colors - Tech-focused blue/purple
-  accentColor: "#667eea",
-  accentBright: "#5a67d8",
-  accentGradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+  // Accent color - Apple blue
+  accentColor: "#0071e3",
+  accentBright: "#0077ed",
+  accentGradient: "#0071e3",
 
-  // Glass card properties
-  glassBackground: "rgba(255, 255, 255, 0.25)",
-  glassBorder: "rgba(255, 255, 255, 0.18)",
-  glassBackdropBlur: "blur(20px)",
-  glassShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
+  // Card properties - Clean with subtle shadows
+  glassBackground: "#ffffff",
+  glassBorder: "rgba(0, 0, 0, 0.04)",
+  glassBackdropBlur: "none",
+  glassShadow: "0 2px 12px rgba(0, 0, 0, 0.08)",
 
-  // Card backgrounds with glassmorphism
-  projectCard: "rgba(255, 255, 255, 0.15)",
-  cardHover: "rgba(255, 255, 255, 0.35)",
+  // Card backgrounds
+  projectCard: "#ffffff",
+  cardHover: "#f5f5f7",
 
   // Avatar colors (keep for compatibility)
   skinColor: "#F7B799",
   skinColor2: "#FCB696",
-  imageDark: "rgba(255, 255, 255, 0.1)",
-  imageClothes: "rgba(102, 126, 234, 0.3)",
-  avatarMisc: "rgba(255, 255, 255, 0.2)",
-  avatarShoes: "rgba(102, 126, 234, 0.4)",
+  imageDark: "#f5f5f7",
+  imageClothes: "#e8e8ed",
+  avatarMisc: "#f5f5f7",
+  avatarShoes: "#d2d2d7",
 
-  // Button styles
-  buttonBackground: "rgba(255, 255, 255, 0.3)",
-  buttonHover: "rgba(255, 255, 255, 0.5)",
+  // Button styles - Clean Apple style
+  buttonBackground: "#0071e3",
+  buttonHover: "#0077ed",
 
-  // Header/Navigation
-  headerBackground: "rgba(255, 255, 255, 0.1)",
-  headerBlur: "blur(10px)",
+  // Header/Navigation - Minimal, clean
+  headerBackground: "rgba(255, 255, 255, 0.8)",
+  headerBlur: "blur(20px)",
+
+  // Additional Apple-style properties
+  borderColor: "rgba(0, 0, 0, 0.1)",
+  hoverShadow: "0 4px 20px rgba(0, 0, 0, 0.12)",
+  divider: "#d2d2d7",
 };
 
 const darkTheme = {
   name: "dark",
-  // Gradient backgrounds - Deep space tech theme
-  body: "linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)",
-  bodyAlt: "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
+  // Clean dark backgrounds - Apple dark mode style
+  body: "#000000",
+  bodyAlt: "#1d1d1f",
 
-  // Text colors
-  text: "#e2e8f0",
+  // Text colors - Apple dark mode
+  text: "#f5f5f7",
   textBright: "#ffffff",
   dark: "#000000",
-  secondaryText: "#a0aec0",
+  secondaryText: "#a1a1a6",
 
-  // Accent colors - Vibrant tech colors (cyan/blue/purple)
-  accentColor: "#00d4ff",
-  accentBright: "#00f5ff",
-  accentGradient: "linear-gradient(135deg, #00d4ff 0%, #667eea 100%)",
+  // Accent color - Apple blue for dark mode
+  accentColor: "#2997ff",
+  accentBright: "#409cff",
+  accentGradient: "#2997ff",
 
-  // Glass card properties - Dark glassmorphism
-  glassBackground: "rgba(255, 255, 255, 0.05)",
+  // Card properties - Dark with subtle shadows
+  glassBackground: "#1d1d1f",
   glassBorder: "rgba(255, 255, 255, 0.1)",
-  glassBackdropBlur: "blur(25px)",
-  glassShadow: "0 8px 32px 0 rgba(0, 0, 0, 0.37)",
+  glassBackdropBlur: "none",
+  glassShadow: "0 2px 12px rgba(0, 0, 0, 0.5)",
 
   // Card backgrounds
-  projectCard: "rgba(255, 255, 255, 0.05)",
-  cardHover: "rgba(255, 255, 255, 0.15)",
+  projectCard: "#1d1d1f",
+  cardHover: "#2d2d2f",
 
   // Avatar colors (keep for compatibility)
   skinColor: "#F7B799",
   skinColor2: "#FCB696",
-  imageDark: "rgba(0, 0, 0, 0.3)",
-  imageClothes: "rgba(0, 212, 255, 0.2)",
-  avatarMisc: "rgba(255, 255, 255, 0.05)",
-  avatarShoes: "rgba(0, 212, 255, 0.3)",
+  imageDark: "#1d1d1f",
+  imageClothes: "#2d2d2f",
+  avatarMisc: "#1d1d1f",
+  avatarShoes: "#2d2d2f",
 
   // Button styles
-  buttonBackground: "rgba(255, 255, 255, 0.1)",
-  buttonHover: "rgba(0, 212, 255, 0.3)",
+  buttonBackground: "#2997ff",
+  buttonHover: "#409cff",
 
   // Header/Navigation
-  headerBackground: "rgba(0, 0, 0, 0.2)",
-  headerBlur: "blur(15px)",
+  headerBackground: "rgba(0, 0, 0, 0.8)",
+  headerBlur: "blur(20px)",
+
+  // Additional properties
+  borderColor: "rgba(255, 255, 255, 0.1)",
+  hoverShadow: "0 4px 20px rgba(0, 0, 0, 0.8)",
+  divider: "#424245",
 };
 
 export const themes = { light: lightTheme, dark: darkTheme };
