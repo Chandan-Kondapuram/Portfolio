@@ -7,10 +7,17 @@ function CertificationCard(props) {
   const certificate = props.certificate;
   const theme = props.theme;
   const styles = style({
-    boxShadow: `0px 2px 5px ${certificate.color_code}`,
-    border: `1px solid ${certificate.color_code}`,
+    background: theme.glassBackground,
+    backdropFilter: theme.glassBackdropBlur,
+    WebkitBackdropFilter: theme.glassBackdropBlur,
+    boxShadow: theme.glassShadow,
+    border: `1px solid ${theme.glassBorder}`,
+    borderRadius: "25px",
+    transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
     ":hover": {
-      boxShadow: `0 5px 15px ${certificate.color_code}`,
+      boxShadow: `0 15px 45px ${theme.accentColor}`,
+      transform: "translateY(-10px) scale(1.02)",
+      background: theme.cardHover,
     },
   });
 

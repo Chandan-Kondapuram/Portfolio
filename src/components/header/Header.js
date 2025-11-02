@@ -18,16 +18,18 @@ function Header(props) {
     marginLeft: "15px",
     paddingTop: "5px",
     borderRadius: "50%",
-    border: "none",
+    border: "1px solid rgba(255, 255, 255, 0.18)",
     alignItems: "center",
     justifyContent: "center",
-    backgroundColor: props.theme.name === "light" ? "#7CD1F7" : "#292C3F",
+    background: "rgba(255, 255, 255, 0.15)",
+    backdropFilter: "blur(10px)",
+    WebkitBackdropFilter: "blur(10px)",
     outline: "none",
-    transition: "all 0.2s ease-in-out",
+    transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
     ":hover": {
-      boxShadow: `0 3px 8px ${
-        props.theme.name === "light" ? "#F7D774" : "#646464"
-      }`,
+      transform: "scale(1.1) rotate(15deg)",
+      boxShadow: `0 8px 20px ${props.theme.accentColor}`,
+      background: "rgba(255, 255, 255, 0.25)",
     },
   });
 
@@ -52,13 +54,13 @@ function Header(props) {
       <HiMoon
         strokeWidth={1}
         size={20}
-        color={props.theme.name === "light" ? "#F9D784" : "#A7A7A7"}
+        color="#00d4ff"
       />
     ) : (
       <CgSun
         strokeWidth={1}
         size={20}
-        color={props.theme.name === "light" ? "#F9D784" : "#A7A7A7"}
+        color="#667eea"
       />
     );
 

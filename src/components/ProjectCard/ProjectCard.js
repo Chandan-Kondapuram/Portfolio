@@ -11,16 +11,21 @@ export default function ProjectCard({ repo: project, theme }) {
   }
 
   const styles = style({
-    color: "rgb(88, 96, 105)",
-    backgroundColor: "rgb(255, 255, 255)",
-    boxShadow: "rgba(0, 0, 0, 0.2) 0px 10px 30px -15px",
-    padding: "2rem",
+    color: theme.text,
+    background: theme.glassBackground,
+    backdropFilter: theme.glassBackdropBlur,
+    WebkitBackdropFilter: theme.glassBackdropBlur,
+    border: `1px solid ${theme.glassBorder}`,
+    boxShadow: theme.glassShadow,
+    padding: "2.5rem",
     cursor: "pointer",
-    borderRadius: "5px",
+    borderRadius: "25px",
     height: "100%",
-    transition: "all 0.2s ease-in-out",
+    transition: "all 0.3s cubic-bezier(0.4, 0, 0.2, 1)",
     ":hover": {
-      boxShadow: `${theme.imageDark} 0 2px 15px`,
+      transform: "translateY(-10px) scale(1.02)",
+      boxShadow: `0 15px 45px ${theme.accentColor}`,
+      background: theme.cardHover,
     },
   });
 
