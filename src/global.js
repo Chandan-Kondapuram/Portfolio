@@ -10,30 +10,31 @@ export const GlobalStyles = createGlobalStyle`
   body {
     align-items: center;
     background: ${({ theme }) => theme.body};
-    background-attachment: fixed;
-    background-size: cover;
     color: ${({ theme }) => theme.text};
     display: flex;
     min-height: 100vh;
-    font-family: 'Inter', BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    transition: background 0.3s ease, color 0.3s ease;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Glassmorphism base styles */
-  .glass-card {
-    background: ${({ theme }) => theme.glassBackground};
-    backdrop-filter: ${({ theme }) => theme.glassBackdropBlur};
-    -webkit-backdrop-filter: ${({ theme }) => theme.glassBackdropBlur};
-    border-radius: 20px;
-    border: 1px solid ${({ theme }) => theme.glassBorder};
+  /* Apple-style card base */
+  .apple-card {
+    background: ${({ theme }) => theme.projectCard};
+    border-radius: 18px;
+    border: 1px solid ${({ theme }) => theme.borderColor};
     box-shadow: ${({ theme }) => theme.glassShadow};
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
   }
 
-  .glass-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.5);
+  .apple-card:hover {
+    transform: translateY(-4px);
+    box-shadow: ${({ theme }) => theme.hoverShadow};
     background: ${({ theme }) => theme.cardHover};
   }
 
@@ -42,33 +43,71 @@ export const GlobalStyles = createGlobalStyle`
     scroll-behavior: smooth;
   }
 
-  /* Selection color */
+  /* Selection color - Apple blue */
   ::selection {
     background: ${({ theme }) => theme.accentColor};
     color: white;
   }
 
-  /* Custom scrollbar */
+  /* Minimal scrollbar - Apple style */
   ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
   }
 
   ::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.1);
+    background: transparent;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: ${({ theme }) => theme.accentColor};
+    background: ${({ theme }) => theme.secondaryText};
     border-radius: 10px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: ${({ theme }) => theme.accentBright};
+    background: ${({ theme }) => theme.text};
   }
 
-  /* Focus styles */
+  /* Clean focus styles */
   *:focus-visible {
     outline: 2px solid ${({ theme }) => theme.accentColor};
-    outline-offset: 2px;
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  /* Typography helpers */
+  .headline {
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  .body-large {
+    font-size: 21px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+
+  /* Smooth animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in {
+    animation: fadeIn 0.8s ease-out;
   }
 `;

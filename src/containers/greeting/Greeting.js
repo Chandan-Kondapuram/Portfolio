@@ -13,12 +13,10 @@ export default function Greeting(props) {
 
   const styles = style({
     background: theme.buttonBackground,
-    backdropFilter: "blur(10px)",
-    WebkitBackdropFilter: "blur(10px)",
-    border: `1px solid ${theme.glassBorder}`,
+    border: "none",
     ":hover": {
       background: theme.buttonHover,
-      boxShadow: `0 12px 40px ${theme.accentColor}`,
+      transform: "scale(1.02)",
     },
   });
 
