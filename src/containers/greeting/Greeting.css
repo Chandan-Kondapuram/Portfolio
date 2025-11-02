@@ -1,162 +1,254 @@
+/* Netflix-Style Full-Screen Hero */
+
 .main {
-  width: 90%;
-  padding: 0px 10px;
+  width: 100%;
+  padding: 0px;
   margin: 0px auto;
-  margin-top: 4rem;
 }
 
 .greet-main {
-  max-width: 85%;
-  padding: 60px 40px;
-  margin: 40px auto;
-  display: block;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-radius: 30px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(20, 20, 20, 0.8) 100%
+    ),
+    linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
 }
 
-.greet-main:hover {
-  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.5);
-  transform: translateY(-5px);
+/* Dark overlay gradient at bottom */
+.greet-main::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: linear-gradient(to top, #141414 0%, transparent 100%);
+  pointer-events: none;
 }
 
 .greeting-main {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px;
   display: flex;
-  align-items: center;
-  gap: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
 }
 
 .greeting-main > * {
-  flex: 1;
-  margin-bottom: 30px;
+  flex: none;
+  margin-bottom: 0px;
+}
+
+.greeting-text-div {
+  max-width: 800px;
 }
 
 .button-greeting-div {
   display: flex;
-  margin-top: 20px;
+  margin-top: 24px;
+  gap: 16px;
+  align-items: center;
 }
 
+/* Hero Title - Netflix Style */
 .greeting-text {
-  margin-top: 0px;
-  font-size: 70px;
-  line-height: 1.2;
-  font-family: "Google Sans Bold";
-  background: linear-gradient(135deg, #00d4ff 0%, #667eea 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: 0 0 40px rgba(0, 212, 255, 0.3);
-  margin-bottom: 20px;
+  margin: 0px;
+  font-size: 80px;
+  line-height: 1.05;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+  margin-bottom: 16px;
+  animation: fadeInUp 0.8s ease-out;
 }
 
 .greeting-nickname {
-  font-size: 30px;
-  line-height: 1.5;
-  font-family: "Google Sans Bold Italic";
+  font-size: 32px;
+  line-height: 1.3;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 
+/* Subtitle */
 .greeting-text-p {
-  font-size: 28px;
-  line-height: 1.6;
-  margin-right: 40px;
-  font-family: "Google Sans Medium";
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  line-height: 1.4;
+  margin-right: 0px;
+  margin-top: 20px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #e5e5e5;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  max-width: 700px;
+  animation: fadeInUp 0.8s ease-out 0.2s backwards;
 }
 
-.greeting-image-div > * {
-  max-width: 100%;
-  height: auto;
+.greeting-text-p span {
+  color: #e50914;
+  font-weight: 500;
 }
 
+/* Hide default image */
+.greeting-image-div {
+  display: none;
+}
+
+/* Netflix-Style CTA Buttons */
 .button {
   text-decoration: none;
-  color: rgba(255, 255, 255, 1);
-  padding: 18px 40px;
-  margin-top: 25px;
-  border-radius: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  margin-bottom: 20px;
-  min-width: 200px;
+  color: white;
+  padding: 16px 32px;
+  margin-top: 0px;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 0px;
+  min-width: 160px;
   height: auto;
-  font-weight: bold;
-  font-family: "Google Sans Regular";
-  font-size: 17px;
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 600;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  background: #e50914;
+  box-shadow: 0 2px 8px rgba(229, 9, 20, 0.5);
+  transition: all 0.2s ease;
   cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-
-.button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
-  transition: left 0.5s;
-}
-
-.button:hover::before {
-  left: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: fadeInUp 0.8s ease-out 0.4s backwards;
 }
 
 .button:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 12px 40px rgba(0, 212, 255, 0.6);
-  background: rgba(255, 255, 255, 0.25);
+  background: #f40612;
+  box-shadow: 0 4px 12px rgba(229, 9, 20, 0.7);
+  transform: scale(1.05);
+}
+
+/* Secondary button */
+.button-secondary {
+  background: rgba(109, 109, 110, 0.7);
+  color: white;
+  box-shadow: none;
+}
+
+.button-secondary:hover {
+  background: rgba(109, 109, 110, 0.9);
+  box-shadow: none;
+}
+
+/* Scroll indicator */
+.scroll-indicator {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-10px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-5px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
-    font-size: 50px;
+    font-size: 64px;
   }
 
   .greeting-text-p {
     font-size: 20px;
   }
-
-  .greet-main {
-    max-width: 900px;
-  }
 }
+
 @media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
+  .greet-main {
+    min-height: 90vh;
   }
-  .greeting-text {
-    font-size: 30px;
-    margin-top: 0px;
-    text-align: center;
-  }
-  .greeting-nickname {
-    font-size: 25px;
-    text-align: center;
-  }
-  .greeting-text-p {
-    font-size: 16px;
-    margin-right: 0px;
-    line-height: normal;
-    text-align: center;
-  }
+
   .greeting-main {
-    display: block;
+    padding: 60px 20px;
+  }
+
+  .button-greeting-div {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .greeting-text {
+    font-size: 48px;
+    margin-top: 0px;
+    text-align: left;
+    line-height: 1.1;
+  }
+
+  .greeting-nickname {
+    font-size: 24px;
+    text-align: left;
+  }
+
+  .greeting-text-p {
+    font-size: 18px;
+    margin-right: 0px;
+    line-height: 1.4;
+    text-align: left;
+    margin-top: 12px;
   }
 
   .portfolio-repo-btn-div {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    text-align: center;
+  }
+
+  .button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .scroll-indicator {
+    display: none;
   }
 }

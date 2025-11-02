@@ -1,29 +1,61 @@
+/* Netflix-Style Timeline Experience Card */
+
 .experience-card {
   width: 100%;
-  margin-bottom: 25px;
-  border-radius: 25px;
+  margin-bottom: 40px;
+  margin-left: 60px;
+  padding: 24px;
+  background: #2f2f2f;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
   display: flex;
   flex-direction: row;
-  background: rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.18) !important;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  padding: 20px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Timeline dot */
+.experience-card::before {
+  content: "";
+  position: absolute;
+  left: -60px;
+  top: 30px;
+  width: 16px;
+  height: 16px;
+  background: #e50914;
+  border-radius: 50%;
+  border: 3px solid #141414;
+  z-index: 2;
+}
+
+/* Timeline connector line */
+.experience-card::after {
+  content: "";
+  position: absolute;
+  left: -52px;
+  top: 46px;
+  width: 2px;
+  height: calc(100% + 40px);
+  background: rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+
+.experience-card:last-child::after {
+  display: none;
+}
+
 .experience-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 40px rgba(0, 212, 255, 0.4);
-  background: rgba(255, 255, 255, 0.12);
+  background: #3f3f3f;
+  transform: translateX(8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.8);
 }
 
 .experience-card-logo-div {
-  margin: 10px;
+  margin: 0 20px 0 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  flex-shrink: 0;
 }
 
 .experience-card-body-div {
@@ -33,79 +65,81 @@
 .experience-card-header-div {
   display: flex;
   flex-direction: row;
+  margin-bottom: 16px;
 }
 
 .experience-card-logo {
-  width: 70px;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px;
 }
 
 .experience-card-title {
-  font-family: "Google Sans Regular";
-  margin-top: 10px;
-  margin-bottom: 8px;
-  margin-left: 0px;
-  margin-right: 7px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0 0 8px 0;
   text-align: left;
-  font-size: 22px;
-  font-weight: 600;
-  background: linear-gradient(135deg, #00d4ff 0%, #667eea 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-size: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: -0.3px;
 }
 
 .experience-card-company {
-  font-family: "Google Sans Regular";
-  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0 0 4px 0;
   text-align: left;
   font-size: 16px;
+  font-weight: 400;
 }
 
 .experience-card-duration {
-  font-family: "Google Sans Regular";
-  margin-top: 10px;
-  margin-bottom: 2px;
-  margin-left: 0px;
-  margin-right: 0px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0 0 4px 0;
   text-align: right;
   font-size: 14px;
+  color: #b3b3b3;
 }
 
 .experience-card-heading-left {
   float: left;
-  margin-left: 10px;
   margin-right: auto;
 }
 
 .experience-card-heading-right {
   float: right;
   margin-left: auto;
-  margin-right: 10px;
+  text-align: right;
 }
 
 .experience-card-location {
-  font-family: "Google Sans Regular";
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
   text-align: right;
-  color: #868e96;
+  font-size: 14px;
+  color: #b3b3b3;
 }
 
 .experience-card-description {
-  margin-top: 5px;
-  margin-left: 10px;
-  text-align: justify;
-  margin-right: 20px;
-  font-family: "Google Sans Regular";
+  margin: 0;
+  text-align: left;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #b3b3b3;
 }
 
 .experience-card-company > a {
   position: relative;
-  color: #8c8c8c;
+  color: #b3b3b3;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .experience-card-company > a:hover {
-  color: #8c8c8c;
+  color: #e50914;
 }
 
 .experience-card-company > a:hover:before {
@@ -118,10 +152,10 @@
   content: "";
   position: absolute;
   width: 100%;
-  height: 1px;
-  bottom: 0;
+  height: 2px;
+  bottom: -2px;
   left: 0;
-  background-color: #8c8c8c;
+  background-color: #e50914;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -131,55 +165,76 @@
 
 @media (max-width: 768px) {
   .experience-card {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    padding: 20px;
     flex-direction: column;
-    text-align: center;
+  }
+
+  .experience-card::before {
+    left: -40px;
+    top: 24px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .experience-card::after {
+    left: -34px;
+    height: calc(100% + 30px);
+  }
+
+  .experience-card:hover {
+    transform: translateX(4px);
+  }
+
+  .experience-card-logo-div {
+    margin: 0 0 16px 0;
+    justify-content: flex-start;
   }
 
   .experience-card-logo {
-    width: 100px;
-  }
-
-  .experience-card-body-div {
-  }
-
-  .experience-card-heading-left {
-    float: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .experience-card-heading-right {
-    float: center;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .experience-card-title {
-    text-align: center;
-  }
-
-  .experience-card-company {
-    text-align: center;
-  }
-
-  .experience-card-duration {
-    margin-top: 2px;
-    text-align: center;
-  }
-
-  .experience-card-location {
-    /* text-align: left; */
-    text-align: center;
+    width: 50px;
+    height: 50px;
   }
 
   .experience-card-header-div {
     flex-direction: column;
+    margin-bottom: 12px;
+  }
+
+  .experience-card-heading-left {
+    float: none;
+    margin: 0 0 8px 0;
+  }
+
+  .experience-card-heading-right {
+    float: none;
+    margin: 0;
+    text-align: left;
+  }
+
+  .experience-card-title {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .experience-card-company {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .experience-card-duration {
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .experience-card-location {
+    font-size: 13px;
+    text-align: left;
   }
 
   .experience-card-description {
-    margin-left: 14px;
-    margin-right: 14px;
-    text-align: justify;
+    font-size: 15px;
+    text-align: left;
   }
 }

@@ -1,33 +1,40 @@
-.experience-accord {
-  margin: 50px;
-  border-radius: 25px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: hidden;
-}
+/* Netflix-Style Experience Timeline */
 
-.experience-accord:hover {
-  color: rgba(255, 255, 255, 1);
-  box-shadow: 0 12px 40px rgba(0, 212, 255, 0.5);
-  transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.15);
+.experience-accord {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 4%;
+  position: relative;
 }
 
 .accord-panel {
-  font-family: "Google Sans Regular";
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background: transparent !important;
+  margin-bottom: 40px;
+  position: relative;
 }
 
 .accord {
   background: transparent !important;
 }
 
+/* Vertical timeline line */
+.experience-accord::before {
+  content: "";
+  position: absolute;
+  left: calc(4% + 20px);
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
 @media (max-width: 768px) {
   .experience-accord {
-    margin: 20px;
+    padding: 0 20px;
+  }
+
+  .experience-accord::before {
+    left: 35px;
   }
 }

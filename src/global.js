@@ -10,31 +10,32 @@ export const GlobalStyles = createGlobalStyle`
   body {
     align-items: center;
     background: ${({ theme }) => theme.body};
-    background-attachment: fixed;
-    background-size: cover;
     color: ${({ theme }) => theme.text};
     display: flex;
     min-height: 100vh;
-    font-family: 'Inter', BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    transition: background 0.3s ease, color 0.3s ease;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
-  /* Glassmorphism base styles */
-  .glass-card {
-    background: ${({ theme }) => theme.glassBackground};
-    backdrop-filter: ${({ theme }) => theme.glassBackdropBlur};
-    -webkit-backdrop-filter: ${({ theme }) => theme.glassBackdropBlur};
-    border-radius: 20px;
-    border: 1px solid ${({ theme }) => theme.glassBorder};
+  /* Netflix-style card */
+  .netflix-card {
+    background: ${({ theme }) => theme.projectCard};
+    border-radius: 6px;
     box-shadow: ${({ theme }) => theme.glassShadow};
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+    position: relative;
   }
 
-  .glass-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.5);
-    background: ${({ theme }) => theme.cardHover};
+  .netflix-card:hover {
+    transform: scale(1.05);
+    box-shadow: ${({ theme }) => theme.hoverShadow};
+    z-index: 10;
   }
 
   /* Smooth scrolling */
@@ -42,33 +43,95 @@ export const GlobalStyles = createGlobalStyle`
     scroll-behavior: smooth;
   }
 
-  /* Selection color */
+  /* Selection color - Netflix red */
   ::selection {
     background: ${({ theme }) => theme.accentColor};
     color: white;
   }
 
-  /* Custom scrollbar */
+  /* Dark scrollbar - Netflix style */
   ::-webkit-scrollbar {
     width: 10px;
   }
 
   ::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.1);
+    background: #141414;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: ${({ theme }) => theme.accentColor};
+    background: #4d4d4d;
     border-radius: 10px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: ${({ theme }) => theme.accentBright};
+    background: #6d6d6d;
   }
 
   /* Focus styles */
   *:focus-visible {
     outline: 2px solid ${({ theme }) => theme.accentColor};
     outline-offset: 2px;
+  }
+
+  /* Netflix Typography */
+  .hero-title {
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,.45);
+  }
+
+  .section-title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: ${({ theme }) => theme.secondaryText};
+  }
+
+  /* Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  .scale-in {
+    animation: scaleIn 0.4s ease-out;
+  }
+
+  /* Full-screen sections */
+  .full-height {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;

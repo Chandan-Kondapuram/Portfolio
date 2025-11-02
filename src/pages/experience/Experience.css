@@ -1,87 +1,94 @@
+/* Netflix-Style Experience Section */
+
 .experience-main {
   width: 100%;
+  background: #141414;
+  min-height: 100vh;
+  padding: 0;
 }
 
 .basic-experience {
-  margin-left: 5%;
-  margin-right: 5%;
+  padding: 80px 4% 60px;
+  margin: 0;
 }
 
 .experience-heading-div {
   display: flex;
-}
-
-.experience-heading-div > * {
-  flex: 1;
-}
-
-.experience-heading-img-div {
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+
+/* Hide old image - user requested no old images */
+.experience-heading-img-div {
+  display: none;
 }
 
 .experience-heading-text-div {
-  text-align: center;
-}
-
-.experience-heading-img-div > * {
+  text-align: left;
   max-width: 100%;
-  height: auto;
 }
 
 .experience-heading-text {
-  font-size: 56px;
-  font-weight: 400;
-  font-family: "Google Sans Medium";
-  line-height: 1.1;
-  text-align: center;
-  margin-top: 80px;
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  text-align: left;
+  margin: 0 0 16px 0;
+  color: #ffffff;
+  letter-spacing: -0.5px;
 }
 
 .experience-heading-sub-text {
-  font-size: 30px;
-  font-family: "Google Sans Regular";
-  text-align: center;
-  margin-bottom: 10px;
+  font-size: 24px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  text-align: left;
+  margin: 0 0 12px 0;
+  color: #ffffff;
 }
 
 .experience-header-detail-text {
-  font-size: 20px;
-  line-height: 30px;
-  margin-top: 0px;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-family: "Google Sans Medium";
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #b3b3b3;
+  max-width: 700px;
 }
 
 @media (max-width: 1380px) {
   .experience-heading-text {
-    font-size: 50px;
-    margin-top: 80px;
-  }
-  .experience-heading-sub-text {
-    font-size: 25px;
-  }
-}
-
-@media (max-width: 768px) {
-  .experience-heading-text {
-    font-size: 30px;
-    margin-top: 20px;
+    font-size: 40px;
   }
 
   .experience-heading-sub-text {
     font-size: 20px;
   }
 
-  .experience-heading-div {
-    flex-direction: column;
+  .experience-header-detail-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .basic-experience {
+    padding: 60px 20px 40px;
+  }
+
+  .experience-heading-text {
+    font-size: 32px;
+    text-align: left;
+  }
+
+  .experience-heading-sub-text {
+    font-size: 18px;
+    text-align: left;
   }
 
   .experience-header-detail-text {
-    font-size: 16px;
-    margin-right: 0px;
-    line-height: normal;
-    text-align: center;
+    font-size: 15px;
+    text-align: left;
   }
 }

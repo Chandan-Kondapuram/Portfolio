@@ -1,23 +1,30 @@
+/* Netflix-Style Software Skills */
+
 .dev-icons {
-  padding-left: 0;
+  padding: 0;
+  margin: 24px 0;
   list-style: none;
   font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  text-align: center;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .software-skill-inline {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  font-family: "Google Sans Regular";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .software-skill-inline > i {
-  color: #868e96;
+  color: #b3b3b3;
+  transition: all 0.3s ease;
 }
 
 .software-skill-inline > i:hover {
-  color: #645beb;
+  color: #e50914;
+  transform: scale(1.2);
 }

@@ -1,91 +1,101 @@
-// Glassmorphism Theme Presets - Professional Software Developer & Data Scientist
+// Netflix-Inspired Hero Theme - Cinematic, Bold, Dark
 
 const lightTheme = {
   name: "light",
-  // Gradient backgrounds for glassmorphism
-  body: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
-  bodyAlt: "linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)",
+  // Netflix light mode (rarely used, but available)
+  body: "#f3f3f3",
+  bodyAlt: "#ffffff",
 
   // Text colors
-  text: "#2d3748",
-  textBright: "#1a202c",
-  dark: "#000000",
-  secondaryText: "#4a5568",
+  text: "#000000",
+  textBright: "#000000",
+  dark: "#141414",
+  secondaryText: "#564d4d",
 
-  // Accent colors - Tech-focused blue/purple
-  accentColor: "#667eea",
-  accentBright: "#5a67d8",
-  accentGradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+  // Accent color - Netflix red
+  accentColor: "#E50914",
+  accentBright: "#f40612",
+  accentGradient: "linear-gradient(135deg, #E50914 0%, #f40612 100%)",
 
-  // Glass card properties
-  glassBackground: "rgba(255, 255, 255, 0.25)",
-  glassBorder: "rgba(255, 255, 255, 0.18)",
-  glassBackdropBlur: "blur(20px)",
-  glassShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
+  // Card properties
+  glassBackground: "#ffffff",
+  glassBorder: "rgba(0, 0, 0, 0.1)",
+  glassBackdropBlur: "none",
+  glassShadow: "0 4px 16px rgba(0, 0, 0, 0.1)",
 
-  // Card backgrounds with glassmorphism
-  projectCard: "rgba(255, 255, 255, 0.15)",
-  cardHover: "rgba(255, 255, 255, 0.35)",
+  // Card backgrounds
+  projectCard: "#ffffff",
+  cardHover: "#f8f8f8",
 
   // Avatar colors (keep for compatibility)
   skinColor: "#F7B799",
   skinColor2: "#FCB696",
-  imageDark: "rgba(255, 255, 255, 0.1)",
-  imageClothes: "rgba(102, 126, 234, 0.3)",
-  avatarMisc: "rgba(255, 255, 255, 0.2)",
-  avatarShoes: "rgba(102, 126, 234, 0.4)",
+  imageDark: "#f3f3f3",
+  imageClothes: "#e0e0e0",
+  avatarMisc: "#f3f3f3",
+  avatarShoes: "#d0d0d0",
 
-  // Button styles
-  buttonBackground: "rgba(255, 255, 255, 0.3)",
-  buttonHover: "rgba(255, 255, 255, 0.5)",
+  // Button styles - Netflix red
+  buttonBackground: "#E50914",
+  buttonHover: "#f40612",
 
   // Header/Navigation
-  headerBackground: "rgba(255, 255, 255, 0.1)",
+  headerBackground: "rgba(255, 255, 255, 0.95)",
   headerBlur: "blur(10px)",
+
+  // Additional properties
+  borderColor: "rgba(0, 0, 0, 0.08)",
+  hoverShadow: "0 8px 24px rgba(0, 0, 0, 0.15)",
+  divider: "#e0e0e0",
 };
 
 const darkTheme = {
   name: "dark",
-  // Gradient backgrounds - Deep space tech theme
-  body: "linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)",
-  bodyAlt: "linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%)",
+  // Netflix dark theme - Signature look
+  body: "#141414",
+  bodyAlt: "#181818",
 
-  // Text colors
-  text: "#e2e8f0",
+  // Text colors - Netflix style
+  text: "#ffffff",
   textBright: "#ffffff",
   dark: "#000000",
-  secondaryText: "#a0aec0",
+  secondaryText: "#b3b3b3",
 
-  // Accent colors - Vibrant tech colors (cyan/blue/purple)
-  accentColor: "#00d4ff",
-  accentBright: "#00f5ff",
-  accentGradient: "linear-gradient(135deg, #00d4ff 0%, #667eea 100%)",
+  // Accent color - Netflix red
+  accentColor: "#E50914",
+  accentBright: "#f40612",
+  accentGradient: "linear-gradient(135deg, #E50914 0%, #f40612 100%)",
 
-  // Glass card properties - Dark glassmorphism
-  glassBackground: "rgba(255, 255, 255, 0.05)",
-  glassBorder: "rgba(255, 255, 255, 0.1)",
-  glassBackdropBlur: "blur(25px)",
-  glassShadow: "0 8px 32px 0 rgba(0, 0, 0, 0.37)",
+  // Card properties - Dark Netflix cards
+  glassBackground: "#2f2f2f",
+  glassBorder: "rgba(255, 255, 255, 0.05)",
+  glassBackdropBlur: "none",
+  glassShadow: "0 4px 16px rgba(0, 0, 0, 0.5)",
 
   // Card backgrounds
-  projectCard: "rgba(255, 255, 255, 0.05)",
-  cardHover: "rgba(255, 255, 255, 0.15)",
+  projectCard: "#2f2f2f",
+  cardHover: "#3f3f3f",
 
   // Avatar colors (keep for compatibility)
   skinColor: "#F7B799",
   skinColor2: "#FCB696",
-  imageDark: "rgba(0, 0, 0, 0.3)",
-  imageClothes: "rgba(0, 212, 255, 0.2)",
-  avatarMisc: "rgba(255, 255, 255, 0.05)",
-  avatarShoes: "rgba(0, 212, 255, 0.3)",
+  imageDark: "#2f2f2f",
+  imageClothes: "#3f3f3f",
+  avatarMisc: "#2f2f2f",
+  avatarShoes: "#3f3f3f",
 
-  // Button styles
-  buttonBackground: "rgba(255, 255, 255, 0.1)",
-  buttonHover: "rgba(0, 212, 255, 0.3)",
+  // Button styles - Netflix red
+  buttonBackground: "#E50914",
+  buttonHover: "#f40612",
 
-  // Header/Navigation
-  headerBackground: "rgba(0, 0, 0, 0.2)",
-  headerBlur: "blur(15px)",
+  // Header/Navigation - Transparent black that becomes solid on scroll
+  headerBackground: "rgba(20, 20, 20, 0.9)",
+  headerBlur: "blur(10px)",
+
+  // Additional properties
+  borderColor: "rgba(255, 255, 255, 0.1)",
+  hoverShadow: "0 8px 24px rgba(0, 0, 0, 0.8)",
+  divider: "#3f3f3f",
 };
 
 export const themes = { light: lightTheme, dark: darkTheme };
