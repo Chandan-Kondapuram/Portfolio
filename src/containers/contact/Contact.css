@@ -1,5 +1,20 @@
 .contact-div-main {
   display: flex;
+  padding: 60px 40px;
+  margin: 40px auto;
+  max-width: 85%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-div-main:hover {
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.5);
+  transform: translateY(-5px);
 }
 
 .contact-div-main > * {
@@ -8,7 +23,11 @@
 
 .contact-title {
   font-size: 65px;
-  font-weight: 400;
+  font-weight: 600;
+  background: linear-gradient(135deg, #00d4ff 0%, #667eea 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .contact-detail,

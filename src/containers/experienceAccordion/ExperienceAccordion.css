@@ -1,22 +1,29 @@
 .experience-accord {
   margin: 50px;
-  border-radius: 5px;
-  background-color: #1d1d1d;
-  border: 0.1px solid rgba(211, 211, 211, 0.397);
-  transition: all 0.2s ease-in-out;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
 }
 
 .experience-accord:hover {
   color: rgba(255, 255, 255, 1);
-  box-shadow: 0 5px 15px #e2405f;
+  box-shadow: 0 12px 40px rgba(0, 212, 255, 0.5);
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
 }
 
 .accord-panel {
   font-family: "Google Sans Regular";
+  background: transparent !important;
 }
 
 .accord {
-  background-color: black;
+  background: transparent !important;
 }
 
 @media (max-width: 768px) {
